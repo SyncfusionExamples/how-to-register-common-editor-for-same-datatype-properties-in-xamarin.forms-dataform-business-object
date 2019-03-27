@@ -4,12 +4,10 @@
              xmlns:local="clr-namespace:RegisterCommonEditor"
              x:Class="RegisterCommonEditor.MainPage"
              xmlns:dataForm="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms">
-
-    <ContentPage.BindingContext>
-        <local:ViewModel x:Name="viewModel"/>
-    </ContentPage.BindingContext>
+    <ContentPage.Behaviors>
+        <local:DataFormBehavior/>
+    </ContentPage.Behaviors>
     <ContentPage.Content>
-        <dataForm:SfDataForm x:Name="dataForm"  DataObject="{Binding Hours}"/>
+        <dataForm:SfDataForm x:Name="dataForm" />
     </ContentPage.Content>
-
 </ContentPage>

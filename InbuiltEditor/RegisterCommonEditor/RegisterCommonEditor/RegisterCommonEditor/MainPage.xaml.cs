@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Syncfusion.XForms.DataForm;
+using Syncfusion.XForms.DataForm.Editors;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +14,6 @@ namespace RegisterCommonEditor
         public MainPage()
         {
             InitializeComponent();
-            dataForm.RegisterEditor(typeof(int), "NumericUpDown");
         }
     }
 }
